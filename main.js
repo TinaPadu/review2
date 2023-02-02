@@ -1,6 +1,11 @@
-document.querySelector('#finalRose').addEventListener('click', /*INSERTCODE*/)
+const contestants = document.querySelectorAll(/*INSERTCODE*/)
 
-function hide(){
-	document.querySelector(/*INSERTCODE*/).style.display = 'none'
-	document.querySelector(/*INSERTCODE*/).style.display = 'none'
+Array.from(contestants).forEach(element => element.addEventListener('click', /*INSERTCODE*/))
+
+function checkForRose(click){
+	if(click.target.classList.contains(/*INSERTCODE*/)){
+		document.querySelector('#nikki').classList.toggle(/*INSERTCODE*/)
+	}else{
+		alert("Wrong!");
+	}
 }
